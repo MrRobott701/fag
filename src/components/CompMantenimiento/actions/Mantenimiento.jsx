@@ -135,8 +135,8 @@ const SearchBar = ({ filtro, setFiltro }) => (
 );
 
 const Mantenimiento = ({ isCollapsed }) => {
-    const URI_VEHICULO = 'https://all-gates.onrender.com/vehiculos/activos';
-    const URI_MECANICA = 'https://all-gates.onrender.com/mecanicas';
+    const URI_VEHICULO = 'https://bag-st6b.onrender.com/vehiculos/activos';
+    const URI_MECANICA = 'https://bag-st6b.onrender.com/mecanicas';
 
     // Estados para almacenar vehículos y mantenimientos
     const [vehiculos, setVehiculos] = useState([]);

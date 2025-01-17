@@ -12,9 +12,9 @@ import CompEditVehiculo from './editarVehiculo.jsx'; // Asegúrate de que la rut
 import EliminarVehiculo from './eliminarVehiculo.jsx';
 import { showSuccessAlert, showErrorAlert } from './../../alerts.jsx'; // Asegúrate de que esta ruta sea correcta
 
-const URI = 'https://all-gates.onrender.com/vehiculos/activos';
-const URI_CONDUCTOR = 'https://all-gates.onrender.com/conductores';
-const URI_PROPIETARIO = 'https://all-gates.onrender.com/propietarios';
+const URI = 'https://bag-st6b.onrender.com/vehiculos/activos';
+const URI_CONDUCTOR = 'https://bag-st6b.onrender.com/conductores';
+const URI_PROPIETARIO = 'https://bag-st6b.onrender.com/propietarios';
 const CompSowVehiculos = ({ isCollapsed }) => {
   const [Vehiculos, setVehiculos] = useState([]);
   const [propietarios, setPropietarios] = useState([]); // Estado para almacenar propietarios

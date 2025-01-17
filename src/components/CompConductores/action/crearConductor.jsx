@@ -15,8 +15,8 @@ import {
   validarTelefonoLongitud,
 } from '../../validations/validaciones';
 
-const URI = 'https://all-gates.onrender.com/conductores';
-const URI_VEHICULOS = 'https://all-gates.onrender.com/vehiculos';
+const URI = 'https://bag-st6b.onrender.com/conductores';
+const URI_VEHICULOS = 'https://bag-st6b.onrender.com/vehiculos';
 
 const CompCreateConductores = ({ onClose, getConductores }) => {
   const navigate = useNavigate();

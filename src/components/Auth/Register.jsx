@@ -22,7 +22,7 @@ function Register({ setShowRegister, fetchUsuarios }) { // Recibe fetchUsuarios 
 
   const [showPassword, setShowPassword] = useState(false); // Estado para mostrar/ocultar contraseña
   const navigate = useNavigate();
-  const URI_API = 'https://all-gates.onrender.com/usuarios/register'; // Ruta API
+  const URI_API = 'https://bag-st6b.onrender.com/usuarios/register'; // Ruta API
 
   // Manejar cambios en el formulario
   const handleChange = (e) => {

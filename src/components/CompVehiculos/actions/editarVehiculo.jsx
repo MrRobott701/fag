@@ -29,9 +29,9 @@ import esLocale from 'date-fns/locale/es';
 // Registra el locale español para DatePicker
 registerLocale('es', esLocale);
 
-const URI = 'https://all-gates.onrender.com/vehiculos';
-const URI_CONDUCTOR = 'https://all-gates.onrender.com/conductores';
-const URI_PROPPIETARIOS = 'https://all-gates.onrender.com/propietarios';
+const URI = 'https://bag-st6b.onrender.com/vehiculos';
+const URI_CONDUCTOR = 'https://bag-st6b.onrender.com/conductores';
+const URI_PROPPIETARIOS = 'https://bag-st6b.onrender.com/propietarios';
 
 const CompEditVehiculo = ({ onClose, getVehiculos, vehiculoId }) => {
   // Definición de estados

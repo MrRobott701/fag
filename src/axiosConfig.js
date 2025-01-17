@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 // Define la URL base de tu API
-const API_URL = 'https://all-gates.onrender.com';
+const API_URL = 'https://bag-st6b.onrender.com';
 
 // Crear una instancia de Axios con configuración predeterminada
 const axiosInstance = axios.create({

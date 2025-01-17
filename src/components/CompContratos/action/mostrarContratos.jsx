@@ -15,10 +15,10 @@ const MostrarContratos = (isCollapsed) => {
   const [selectedContratoParaVer, setSelectedContratoParaVer] = useState(null);
   const [selectedContratoParaEditar, setSelectedContratoParaEditar] = useState(null);
 
-  const URI_CONTRATOS = "https://all-gates.onrender.com/contratos";
-  const URI_CONDUCTORES = "https://all-gates.onrender.com/conductores";
-  const URI_VEHICULOS = "https://all-gates.onrender.com/vehiculos";
-  const URI_PROPIETARIOS = "https://all-gates.onrender.com/propietarios";
+  const URI_CONTRATOS = "https://bag-st6b.onrender.com/contratos";
+  const URI_CONDUCTORES = "https://bag-st6b.onrender.com/conductores";
+  const URI_VEHICULOS = "https://bag-st6b.onrender.com/vehiculos";
+  const URI_PROPIETARIOS = "https://bag-st6b.onrender.com/propietarios";
 
   // Función para obtener los contratos con detalles
   const fetchContracts = useCallback(async () => {

@@ -6,7 +6,7 @@ import CompViewPropietario from './viewPropietario.jsx';
 import EliminarPropietario from './eliminarPropietario.jsx';
 import Encabezado from '../others/Encabezado.jsx';
 import MostrarCarros from './mostrarCarros.jsx';
-const URI = 'https://all-gates.onrender.com/propietarios';
+const URI = 'https://bag-st6b.onrender.com/propietarios';
 
 const CompSowPropietarios = ({ isCollapsed }) => {
   const [propietarios, setPropietarios] = useState([]);

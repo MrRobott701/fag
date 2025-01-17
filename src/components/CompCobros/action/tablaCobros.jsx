@@ -16,9 +16,9 @@ const TablaCobros = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [tempValues, setTempValues] = useState({});
 
-    const URI_COBROS = "https://all-gates.onrender.com/cobros/";
-    const URI_CONDUCTORES = "https://all-gates.onrender.com/conductores/";
-    const URI_PROPIETARIOS = "https://all-gates.onrender.com/propietarios/";
+    const URI_COBROS = "https://bag-st6b.onrender.com/cobros/";
+    const URI_CONDUCTORES = "https://bag-st6b.onrender.com/conductores/";
+    const URI_PROPIETARIOS = "https://bag-st6b.onrender.com/propietarios/";
 
     useEffect(() => {
         const fetchData = async () => {

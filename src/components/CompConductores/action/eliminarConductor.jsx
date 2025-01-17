@@ -2,8 +2,8 @@ import Swal from 'sweetalert2';
 import axiosInstance from '../../../axiosConfig.js';
 import 'tailwindcss/tailwind.css';
 
-const URI = 'https://all-gates.onrender.com/Conductores';
-const URI_VEHICULOS = 'https://all-gates.onrender.com/Vehiculos';
+const URI = 'https://bag-st6b.onrender.com/Conductores';
+const URI_VEHICULOS = 'https://bag-st6b.onrender.com/Vehiculos';
 
 const EliminarConductor = ({ id, idVehiculo, getConductores }) => {
 

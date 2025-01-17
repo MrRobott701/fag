@@ -4,8 +4,8 @@ import Swal from 'sweetalert2';
 import Select from 'react-select';
 import { showSuccessAlert, showErrorAlert } from './../../alerts.jsx';
 
-const URI = 'https://all-gates.onrender.com/vehiculos';
-const URI_CONDUCTOR = 'https://all-gates.onrender.com/conductores';
+const URI = 'https://bag-st6b.onrender.com/vehiculos';
+const URI_CONDUCTOR = 'https://bag-st6b.onrender.com/conductores';
 
 const AsignarChofer = ({ idVehiculo, onAsignacionExitosa }) => {
   const [conductores, setConductores] = useState([]);

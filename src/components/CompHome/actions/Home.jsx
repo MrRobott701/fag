@@ -10,10 +10,10 @@ const Home = ({ isCollapsed }) => {
   const [cobros, setCobros] = useState([]);
   const [conductores, setConductores] = useState([]);
 
-  const URI_VEHICULOS = "https://all-gates.onrender.com/vehiculos/activos";
-  const URI_PROPIETARIOS = "https://all-gates.onrender.com/propietarios";
-  const URI_COBROS = "https://all-gates.onrender.com/cobros/activo";
-  const URI_CONDUCTORES = "https://all-gates.onrender.com/conductores/activo";
+  const URI_VEHICULOS = "https://bag-st6b.onrender.com/vehiculos/activos";
+  const URI_PROPIETARIOS = "https://bag-st6b.onrender.com/propietarios";
+  const URI_COBROS = "https://bag-st6b.onrender.com/cobros/activo";
+  const URI_CONDUCTORES = "https://bag-st6b.onrender.com/conductores/activo";
 
   useEffect(() => {
     const fetchData = async () => {

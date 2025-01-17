@@ -2,7 +2,7 @@ import Swal from 'sweetalert2';
 import axiosInstance from '../../../axiosConfig.js';
 import 'tailwindcss/tailwind.css'; // Importa los estilos de Tailwind
 
-const URI = 'https://all-gates.onrender.com/propietarios';
+const URI = 'https://bag-st6b.onrender.com/propietarios';
 
 const EliminarPropietario = ({ id, getPropietarios }) => {
 

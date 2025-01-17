@@ -13,8 +13,8 @@ import {
   validarSoloNumeros,
 } from '../../validations/validaciones.js';
 
-const URI = 'https://all-gates.onrender.com/vehiculos';
-const URI_CONDUCTOR = 'https://all-gates.onrender.com/conductores';
+const URI = 'https://bag-st6b.onrender.com/vehiculos';
+const URI_CONDUCTOR = 'https://bag-st6b.onrender.com/conductores';
 
 const CompCreateVehiculos = ({ onClose, getVehiculos }) => {
   const [propietarios, setPropietarios] = useState([]);
@@ -77,7 +77,7 @@ const [placasVencimiento, setPlacasVencimiento] = useState(fechaInicial);
   useEffect(() => {
     const getPropietarios = async () => {
       try {
-        const response = await axiosInstance.get('https://all-gates.onrender.com/propietarios');
+        const response = await axiosInstance.get('https://bag-st6b.onrender.com/propietarios');
         setPropietarios(response.data);
       } catch (error) {
         console.error('Error al obtener los propietarios:', error);
@@ -91,7 +91,7 @@ const [placasVencimiento, setPlacasVencimiento] = useState(fechaInicial);
 
     const getConductores = async () => {
       try {
-        const response = await axiosInstance.get('https://all-gates.onrender.com/conductores/activo');
+        const response = await axiosInstance.get('https://bag-st6b.onrender.com/conductores/activo');
         setConductores(response.data);
       } catch (error) {
         console.error('Error al obtener los conductores:', error);

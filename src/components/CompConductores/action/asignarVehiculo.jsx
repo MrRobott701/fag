@@ -5,8 +5,8 @@ import Swal from 'sweetalert2';
 import VehiculoSelect from './VehiculoSelect'; // Asegúrate de la ruta correcta
 import { showSuccessAlert, showErrorAlert } from '../../alerts.jsx';
 
-const URI = 'https://all-gates.onrender.com/conductores';
-const URI_VEHICULOS = 'https://all-gates.onrender.com/vehiculos';
+const URI = 'https://bag-st6b.onrender.com/conductores';
+const URI_VEHICULOS = 'https://bag-st6b.onrender.com/vehiculos';
 
 const AsignarVehiculoAConductor = ({ idConductor, onAsignacionExitosa }) => {
   const [vehiculos, setVehiculos] = useState([]);

@@ -4,9 +4,9 @@ import {formatearFecha, formatearNumero} from "./../others/formatFecha";
 import Swal from "sweetalert2";
 
 const ContratoCard = ({ contrato, onView, onEdit, onDelete }) => {
-  const URI_CONDUCTOR = "https://all-gates.onrender.com/conductores";
-  const URI_VEHICULO = "https://all-gates.onrender.com/vehiculos";
-  const URI_PROPIETARIO = "https://all-gates.onrender.com/propietarios";
+  const URI_CONDUCTOR = "https://bag-st6b.onrender.com/conductores";
+  const URI_VEHICULO = "https://bag-st6b.onrender.com/vehiculos";
+  const URI_PROPIETARIO = "https://bag-st6b.onrender.com/propietarios";
 
   const [conductor, setConductor] = useState(null);
   const [vehiculo, setVehiculo] = useState(null);

@@ -13,7 +13,7 @@ import {
 } from '../../validations/validaciones'; // Importa las validaciones
 import Swal from 'sweetalert2';
 
-const URI = 'https://all-gates.onrender.com/propietarios';
+const URI = 'https://bag-st6b.onrender.com/propietarios';
 
 const CompCreatePropietarios = ({ onClose, getPropietarios }) => {
   const navigate = useNavigate();

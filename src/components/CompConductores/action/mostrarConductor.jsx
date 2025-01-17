@@ -6,7 +6,7 @@ import CompViewConductor from './viewConductor.jsx';
 import EliminarConductor from './eliminarConductor.jsx';
 import Encabezado from '../others/Encabezado.jsx';
 import Switch from '../others/Switch.jsx';
-const URI = 'https://all-gates.onrender.com/conductores';
+const URI = 'https://bag-st6b.onrender.com/conductores';
 const CompSowConductores = ({ isCollapsed }) => {
   const [Conductores, setConductores] = useState([]);
   const [loading, setLoading] = useState(true);

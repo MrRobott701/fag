@@ -14,7 +14,7 @@ import {
   validarDireccionLongitud 
 } from '../../validations/validaciones'; // Ajusta la ruta según tu estructura de proyecto
 
-const URI = 'https://all-gates.onrender.com/propietarios';
+const URI = 'https://bag-st6b.onrender.com/propietarios';
 
 const CompEditPropietarios = ({ id, onClose, getPropietarios }) => {
   const navigate = useNavigate();

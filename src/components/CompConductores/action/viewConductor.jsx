@@ -2,9 +2,9 @@ import axiosInstance from '../../../axiosConfig.js';
 import { useEffect, useState } from 'react';
 import CompViewVehiculo from './viewVehiculo';
 
-const URI = 'https://all-gates.onrender.com/conductores';
-const URI_VEHICULOS = 'https://all-gates.onrender.com/vehiculos';
-const URI_CONTRATOS = 'https://all-gates.onrender.com/contratos';
+const URI = 'https://bag-st6b.onrender.com/conductores';
+const URI_VEHICULOS = 'https://bag-st6b.onrender.com/vehiculos';
+const URI_CONTRATOS = 'https://bag-st6b.onrender.com/contratos';
 
 const CompViewConductor = ({ id, onClose }) => {
   console.log("Desde el modal:" + id);

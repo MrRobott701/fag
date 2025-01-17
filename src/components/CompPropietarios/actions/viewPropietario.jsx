@@ -1,7 +1,7 @@
 import axiosInstance from '../../../axiosConfig.js';
 import { useEffect, useState } from 'react';
 
-const URI = 'https://all-gates.onrender.com/propietarios';
+const URI = 'https://bag-st6b.onrender.com/propietarios';
 
 const CompViewPropietario = ({ id, onClose }) => {
   const [propietario, setPropietario] = useState(null);

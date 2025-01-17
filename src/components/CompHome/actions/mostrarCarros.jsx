@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import CompViewVehiculo from '../../CompVehiculos/actions/viewVehiculo.jsx';
 
 export const MostrarCarros = () => {
-    const URI_VEHICULOS = `https://all-gates.onrender.com/vehiculos/activos`;
-    const URI_PROPIETARIOS = `https://all-gates.onrender.com/propietarios`;
+    const URI_VEHICULOS = `https://bag-st6b.onrender.com/vehiculos/activos`;
+    const URI_PROPIETARIOS = `https://bag-st6b.onrender.com/propietarios`;
 
     const [vehiculos, setVehiculos] = useState([]);
     const [propietarios, setPropietarios] = useState([]);

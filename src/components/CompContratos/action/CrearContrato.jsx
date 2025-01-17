@@ -15,10 +15,10 @@ import {
   validarPrecio,
 } from '../../validations/validaciones'; // Asegúrate de que las validaciones existen
 
-const URI_CONTRATOS = 'https://all-gates.onrender.com/contratos';
-const URI_CONDUCTORES = 'https://all-gates.onrender.com/conductores';
-const URI_VEHICULOS = 'https://all-gates.onrender.com/vehiculos/activos';
-const URI_PROPIETARIOS = 'https://all-gates.onrender.com/propietarios';
+const URI_CONTRATOS = 'https://bag-st6b.onrender.com/contratos';
+const URI_CONDUCTORES = 'https://bag-st6b.onrender.com/conductores';
+const URI_VEHICULOS = 'https://bag-st6b.onrender.com/vehiculos/activos';
+const URI_PROPIETARIOS = 'https://bag-st6b.onrender.com/propietarios';
 
 const CrearContrato = ({ onClose, onSubmitSuccess }) => {
   const navigate = useNavigate();

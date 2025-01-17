@@ -21,9 +21,9 @@ import { GenerarDeposito } from "./CompContratoPDF/Deposito";
 
 // Función para obtener los datos del contrato
 export const fetchContratoData = async (contrato) => {
-  const URI_CONDUCTORES = "https://all-gates.onrender.com/conductores";
-  const URI_VEHICULOS = "https://all-gates.onrender.com/vehiculos";
-  const URI_PROPIETARIOS = "https://all-gates.onrender.com/propietarios";
+  const URI_CONDUCTORES = "https://bag-st6b.onrender.com/conductores";
+  const URI_VEHICULOS = "https://bag-st6b.onrender.com/vehiculos";
+  const URI_PROPIETARIOS = "https://bag-st6b.onrender.com/propietarios";
 
   try {
     const [conductorRes, vehiculoRes, propietarioRes] = await Promise.all([
@@ -81,8 +81,8 @@ export const generarDepositoPdf = (contrato, conductor, propietario) => {
 
 // Función principal que combina la recuperación de datos, la generación del PDF y la carga en Google Drive
 export const handleGenerarPdfContrato = async (contrato) => {
-  const URI_CONTRATOS = "https://all-gates.onrender.com/contratos";
-  const URI_CONDUCTORES = "https://all-gates.onrender.com/conductores";
+  const URI_CONTRATOS = "https://bag-st6b.onrender.com/contratos";
+  const URI_CONDUCTORES = "https://bag-st6b.onrender.com/conductores";
   
   const data = await fetchContratoData(contrato);
   if (data) {

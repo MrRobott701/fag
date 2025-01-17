@@ -23,7 +23,7 @@ const HojaCobros = ({ isCollapsed, vehiculos, contratos, propietarios, conductor
     const [activo, setActivo] = useState(1);
     const [searchTerm, setSearchTerm] = useState(""); 
     const [indice, setIndice] = useState(0);
-	const URI = 'https://all-gates.onrender.com/cobros';
+	const URI = 'https://bag-st6b.onrender.com/cobros';
     console.log("URI: ", URI);
     const navigate = useNavigate();
 

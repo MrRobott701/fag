@@ -5,11 +5,11 @@ import TablaCobros from "./tablaCobros";
 import HistorialCobros from "./historialCobros";
 import MetricasCobros from "./metricasCobros";
 const MostrarCobros = (isCollapsed) => {
-    const URI_COBROS = "https://all-gates.onrender.com/cobros";
-    const URI_VEHICULOS = "https://all-gates.onrender.com/vehiculos";
-    const URI_CONDUCTORES = "https://all-gates.onrender.com/conductores/activo";
-    const URI_PROPIETARIOS = "https://all-gates.onrender.com/propietarios";
-    const URI_CONTRATOS = "https://all-gates.onrender.com/contratos";
+    const URI_COBROS = "https://bag-st6b.onrender.com/cobros";
+    const URI_VEHICULOS = "https://bag-st6b.onrender.com/vehiculos";
+    const URI_CONDUCTORES = "https://bag-st6b.onrender.com/conductores/activo";
+    const URI_PROPIETARIOS = "https://bag-st6b.onrender.com/propietarios";
+    const URI_CONTRATOS = "https://bag-st6b.onrender.com/contratos";
 
     const [cobros, setCobros] = useState([]);
     const [vehiculos, setVehiculos] = useState([]);

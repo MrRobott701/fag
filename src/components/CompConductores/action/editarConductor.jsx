@@ -18,7 +18,7 @@ import {
   validarDireccionLongitud 
 } from '../../validations/validaciones';
 
-const URI = 'https://all-gates.onrender.com/conductores';
+const URI = 'https://bag-st6b.onrender.com/conductores';
 
 const CompEditConductores = ({ id, onClose, getConductores }) => {
   const navigate = useNavigate();

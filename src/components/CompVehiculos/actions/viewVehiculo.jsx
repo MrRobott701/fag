@@ -4,9 +4,9 @@ import axiosInstance from '../../../axiosConfig.js';
 import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2'; // Asegúrate de tener SweetAlert2 instalado
 
-const URI_VEHICULOS = 'https://all-gates.onrender.com/vehiculos';
-const URI_CONDUCTORES = 'https://all-gates.onrender.com/conductores'; // Asegúrate de que este endpoint exista
-const URI_PROPIETARIOS = 'https://all-gates.onrender.com/propietarios'; // Asegúrate de que este endpoint exista
+const URI_VEHICULOS = 'https://bag-st6b.onrender.com/vehiculos';
+const URI_CONDUCTORES = 'https://bag-st6b.onrender.com/conductores'; // Asegúrate de que este endpoint exista
+const URI_PROPIETARIOS = 'https://bag-st6b.onrender.com/propietarios'; // Asegúrate de que este endpoint exista
 
 const CompViewVehiculo = ({ id, onClose }) => {
   const [vehiculo, setVehiculo] = useState(null);

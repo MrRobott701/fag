@@ -3,8 +3,8 @@ import Swal from 'sweetalert2';
 import axiosInstance from '../../../axiosConfig.js';; // Asegúrate de importar axios si no está ya en tu proyecto.
 
 const EliminarVehiculo = ({ id, idConductor, getVehiculos }) => {
-    const URI = 'https://all-gates.onrender.com/vehiculos';
-    const URI_CONDUCTORES = 'https://all-gates.onrender.com/conductores';
+    const URI = 'https://bag-st6b.onrender.com/vehiculos';
+    const URI_CONDUCTORES = 'https://bag-st6b.onrender.com/conductores';
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
