@@ -9,7 +9,7 @@ export const GenerarP14 = (doc, contrato, propietario, conductor) => {
 
     // Fecha de firma en la esquina superior derecha, en negrita
     doc.setFont("Helvetica", "bold");
-    doc.text(`Ensenada Baja California a ${formatearFecha(contrato.fechaFirma)}.`, pageWidth, 20, { align: "right" });
+    doc.text(`${formatearFecha(contrato.fechaFirma)}.`, pageWidth, 20, { align: "right" });
 
     // "EL SOCIO" y "EL CONDUCTOR" en el centro de la página
     doc.setFontSize(14);
@@ -27,7 +27,7 @@ export const GenerarP14 = (doc, contrato, propietario, conductor) => {
 
     // Nombres de "ARRENDADOR" (propietario) y "CHOFER" (conductor)
     //const propietarioNombre = propietario.nombre.toUpperCase();
-    const propietarioNombre = "CARLOS ZAMIR FLORES SANTILLAN";
+    const propietarioNombre = propietario.nombre.toUpperCase() ? propietario.nombre.toUpperCase() : "{NOMBREPROPIETARIO}";
     const conductorNombre = conductor.nombre.toUpperCase();
 
     // Dividir los nombres en múltiples líneas si exceden el ancho de la columna

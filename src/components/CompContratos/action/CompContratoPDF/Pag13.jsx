@@ -89,7 +89,7 @@ export const GenerarP13 = (doc, contrato) => {
     // Texto Final
     posY += 10;
     posY = agregarDeclaracionEnLinea(
-        `LAS PARTES estando conformes con el contenido y clausulado del presente contrato lo firman en Ensenada Baja California, el {bold}${formatearFecha(contrato.fechaFirma)}{/bold}, al margen en cada una de sus hojas y al final en esta última para todos los efectos legales a que haya lugar.`,
+        `LAS PARTES estando conformes con el contenido y clausulado del presente contrato lo firman el {bold}${formatearFecha(contrato.fechaFirma)}{/bold}, al margen en cada una de sus hojas y al final en esta última para todos los efectos legales a que haya lugar.`,
         posY
     );
 

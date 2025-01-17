@@ -48,14 +48,14 @@ export const GenerarP1 = (doc, contrato, conductor, vehiculo, propietario) => {
     doc.setFontSize(10);
 
     // Fecha alineada a la derecha
-    const fechaTexto = `Ensenada Baja California a ${formatearFecha(contrato.fechaFirma)}.`;
+    const fechaTexto = `${formatearFecha(contrato.fechaFirma)}.`;
     const anchoFecha = doc.getTextWidth(fechaTexto);
     doc.text(fechaTexto, pageWidth - anchoFecha + indent, 20); // Ajusta la posición X para alinearlo a la derecha
 
     // Texto introductorio
     let posY = 30; // Posición Y después de la fecha
     posY = agregarDeclaracionEnLinea(
-        `CONTRATO DE PRESTACIÓN DE SERVICIOS (EN LO SUCESIVO “CONTRATO”) QUE CELEBRAN POR VOLUNTAD Y DERECHO PROPIO {bold}CARLOS ZAMIR FLORES SANTILLAN{/bold} y/o {bold}JAN CARLOS FLORES MUÑOZ{/bold} (NOMBRE DEL DUEÑO) EN LO SUCESIVO “EL SOCIO”, Y {bold}${conductor.nombre.toUpperCase()}{/bold} (NOMBRE DEL CONDUCTOR) EN LO SUCESIVO “EL CONDUCTOR”; QUIÉNES EN CONJUNTO Y EN LO SUCESIVO SE DENOMINARÁN COMO “LAS PARTES” Y SE PRONUNCIAN EN CONFORMIDAD CON LAS DECLARACIONES Y CLÁUSULAS DESCRITAS A CONTINUACIÓN:`,
+        `CONTRATO DE PRESTACIÓN DE SERVICIOS (EN LO SUCESIVO “CONTRATO”) QUE CELEBRAN POR VOLUNTAD Y DERECHO PROPIO {bold}${propietario.nombre.toUpperCase()}{/bold} (NOMBRE DEL DUEÑO) EN LO SUCESIVO “EL SOCIO”, Y {bold}${conductor.nombre.toUpperCase()}{/bold} (NOMBRE DEL CONDUCTOR) EN LO SUCESIVO “EL CONDUCTOR”; QUIÉNES EN CONJUNTO Y EN LO SUCESIVO SE DENOMINARÁN COMO “LAS PARTES” Y SE PRONUNCIAN EN CONFORMIDAD CON LAS DECLARACIONES Y CLÁUSULAS DESCRITAS A CONTINUACIÓN:`,
         posY + 10
     );
 
@@ -70,7 +70,7 @@ export const GenerarP1 = (doc, contrato, conductor, vehiculo, propietario) => {
 
     posY = agregarDeclaracionEnLinea(
         // PARA PONER EL NOMBRE DEL OBJETO PROPIETARIO : `1. Ser persona de nacionalidad mexicana o extranjero con permiso de trabajo y residencia, acreditando su identidad con el documento oficial {bold}${propietario.nombreDocumento.toUpperCase()}{/bold} número: {bold}${propietario.nroDocumento.toUpperCase()}{/bold}.`,
-        `1. Ser persona de nacionalidad mexicana o extranjero con permiso de trabajo y residencia, acreditando su identidad con el documento oficial {bold}CARLOS ZAMIR FLORES SANTILLAN{/bold} número: {bold}${propietario.nroDocumento.toUpperCase()}{/bold}.`,
+        `1. Ser persona de nacionalidad mexicana o extranjero con permiso de trabajo y residencia, acreditando su identidad con el documento oficial {bold}${propietario.nombre.toUpperCase()}{/bold} número: {bold}${propietario.nroDocumento.toUpperCase()}{/bold}.`,
         posY + 10
     );
 
@@ -90,7 +90,7 @@ export const GenerarP1 = (doc, contrato, conductor, vehiculo, propietario) => {
     );
 
     posY = agregarDeclaracionEnLinea(
-        `5. Contar con la capacidad legal para ser socio de la empresa descrita en la SEGUNDA CLÁUSULA del contrato y poner a disposición de la misma el vehículo marca{bold}${vehiculo.marca.toUpperCase()}{/bold}versión{bold}${vehiculo.modelo.toUpperCase()}{/bold}color{bold}${vehiculo.color.toUpperCase()}{/bold}modelo{bold}${vehiculo.anio}{/bold}con placas{bold}${vehiculo.placas.toUpperCase()}{/bold}del estado/ciudad{bold}ENSENADA B.C.{/bold}y con números de serie{bold}${vehiculo.numeroSerie.toUpperCase()}{/bold}.`,
+        `5. Contar con la capacidad legal para ser socio de la empresa descrita en la SEGUNDA CLÁUSULA del contrato y poner a disposición de la misma el vehículo marca{bold}${vehiculo.marca.toUpperCase()}{/bold}versión{bold}${vehiculo.modelo.toUpperCase()}{/bold}color{bold}${vehiculo.color.toUpperCase()}{/bold}modelo{bold}${vehiculo.anio}{/bold}con placas{bold}${vehiculo.placas.toUpperCase()}{/bold}del estado/ciudad{bold}{/bold} y con números de serie{bold}${vehiculo.numeroSerie.toUpperCase()}{/bold}.`,
         posY + 10
     );
 

@@ -6,7 +6,7 @@ export const GenerarDeposito = (doc, contrato, propietario, conductor) => {
     const fecha = contrato.fechaFirma ? formatearFecha(contrato.fechaFirma) : "__ de _____________ del __";
     doc.setFont("Helvetica", "bold");
     doc.setFontSize(12);
-    doc.text(`Ensenada Baja California a ${fecha}.`, 200, 20, { align: "right" }); // Ajustado para alineación superior derecha y en negrita
+    doc.text(`${fecha}.`, 200, 20, { align: "right" }); // Ajustado para alineación superior derecha y en negrita
 
     // Título del recibo
     doc.setFont("Helvetica", "bold");
@@ -58,8 +58,8 @@ export const GenerarDeposito = (doc, contrato, propietario, conductor) => {
     doc.setLineWidth(0.5);
     doc.line(60, 150, 150, 150); // Línea centrada para la firma
     doc.setFont("Helvetica", "bold");
-    //doc.text(`${propietario.nombre}`, 105, 160, { align: "center" });
-    doc.text(`CARLOS ZAMIR FLORES SANTILLAN`, 105, 160, { align: "center" });
+    doc.text(`${propietario.nombre}`, 105, 160, { align: "center" });
+    
 
     // Número de página en el pie de página
     const pageCount = doc.internal.getNumberOfPages();

@@ -24,7 +24,7 @@ const CompCreatePropietarios = ({ onClose, getPropietarios }) => {
   const [calle, setCalle] = useState('');
   const [codigoPostal, setCodigoPostal] = useState('');
   const [codigoPostalInput, setCodigoPostalInput] = useState(''); // Para mostrar 'CP-'
-  const [ciudad, setCiudad] = useState('Ensenada Baja California'); // Valor por defecto
+  const [ciudad, setCiudad] = useState(''); // Valor por defecto
   const [direccion, setDireccion] = useState('');
   const [telefono, setTelefono] = useState('');
   const [telefonoInput, setTelefonoInput] = useState(''); // Campo con formato
