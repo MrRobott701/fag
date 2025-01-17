@@ -1,0 +1,39 @@
+/* Upload.css */
+.custom-file-input {
+    background-color: #f3f4f6;
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 16px;
+    color: #ff00ff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .custom-file-input:hover {
+    background-color: #f1f1f1;
+    border-color: #adadad;
+  }
+  
+  .custom-confirm-button {
+    background-color: #04c50a !important;
+    color: white !important;
+    font-weight: bold;
+  }
+    .custom-confirm-button:hover {
+        background-color: #048d0b !important;
+    }
+
+    .custom-cancel-button {
+        background-color: #fa4032 !important;
+        color: white !important;
+        font-weight: bold;
+    }
+    .custom-cancel-button:hover {
+        background-color: #ec1000 !important;
+    }
+
+    /* Estilo para el mensaje de validación */
+.custom-validation-message {
+    font-weight: bold;
+    color: red;
+  }

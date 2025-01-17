@@ -1,0 +1,61 @@
+.react-datepicker__header {
+    background-color: #160582 !important; /* Fondo del encabezado en azul oscuro */
+    border-radius: 10px 10px 0 0 !important; /* Bordes redondeados en el encabezado */
+    font-family: 'Poppins', sans-serif !important; /* Fuente amigable en el encabezado */
+
+    width: 110% !important;
+}
+
+.react-datepicker {
+    width: 110% !important; /* Asegura que ocupe todo el ancho */
+    
+    font-size: 1.1rem !important; /* Aumentar el tamaño del texto */
+    font-family: 'Poppins', sans-serif !important; /* Fuente amigable */
+    border-radius: 10px !important; /* Bordes redondeados en todo el calendario */
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+    font-size: 1.3rem !important; /* Aumentar el tamaño de los días */
+    margin: 0 .5rem !important;
+    font-family: 'Poppins', sans-serif !important; /* Cambiar la tipografía de los días */
+}
+
+.react-datepicker__current-month {
+    display: none !important; /* Ocultar el mes actual */
+}
+
+.react-datepicker__day-name {
+    color: #ffffff !important; /* Cambiar el color de los nombres de los días */
+}
+
+.react-datepicker__year-select,
+.react-datepicker__month-select {
+    border-radius: 5px 5px 5px 5px !important;
+    font-family: 'Poppins', sans-serif !important; /* Cambiar tipografía de los selectores */
+    font-size: 1.3rem !important; /* Aumentar el tamaño del texto de los selectores */
+    padding: 5px !important; /* Ajustar el espaciado interno */
+}
+
+.react-datepicker__day {
+    
+    border-radius: 50% !important; /* Hacer los días en formato circular */
+    padding: 0.1rem !important; /* Aumentar el tamaño de los días */
+}
+
+.react-datepicker__day:hover {
+    
+    background-color: #adccec !important; /* Color de fondo al pasar el cursor */
+    color: #000000 !important; /* Cambiar el color del texto al pasar el cursor */
+}
+
+.react-datepicker__month {
+    width: 110%;
+    border-radius: 10px !important; /* Bordes redondeados en el mes */
+}
+
+.react-datepicker__day--selected {
+    background-color: #4c6ef5 !important; /* Cambiar el color del día seleccionado */
+    color: white !important;
+}
+
